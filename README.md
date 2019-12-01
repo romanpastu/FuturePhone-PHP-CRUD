@@ -24,4 +24,4 @@ La aplicación también viene equipada con una api que permite realizar las sigu
   - Listar los nombres de todas las tárifas
   - Borrar tarifas (Acción restringida a administradores con api-key)
 
-![Image description](https://i.gyazo.com/3254a7dc962eb9a53ade37aab21e9a45.png)
+![Ejemplos de uso de api](https://i.gyazo.com/3254a7dc962eb9a53ade37aab21e9a45.png)
