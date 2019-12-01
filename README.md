@@ -30,3 +30,6 @@ La aplicación también viene equipada con una **api** que permite realizar las 
   - Administrador: DNI = 12345678A | pass = 12345
   - Comercial: DNI = 12345678C | pass = 12345
   - Usuario Común = DNI = 12345678B | pass = 12345
+  
+  **Esquema de la base de datos**
+  ![Esquema de la base de datos](https://github.com/romanpastu/FuturePhone-PHP-CRUD/blob/master/dbSchema/dbschema.png?raw=true)
