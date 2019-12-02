@@ -177,29 +177,32 @@ if (!$ses->checkActiveSession()){
         <br>
         <br>
         <!-- Subir imagenes para las tarifas !-->
+
+
+<!--
         <div class="card" style="width: 25rem; margin: 0 auto; margin-top: 10%; margin-top:1vw">
         <div class="card-body " >
 
-            <form name="upload" action="../futurephone/ImageUpload/upload.php" method="POST" enctype="multipart/form-data">
+            <form name="upload" action="../FuturePhone-PHP-CRUD/ImageUpload/upload.php" method="POST" enctype="multipart/form-data">
                 <legend>Elige la portada de la tarifa</legend>
                 <div class="col-md-10"> 
                 <input id="upload" type="file" name="image[]" multiple >
                 <div class="col-md-10"> 
-                <!-- <input id="idTar" name="idTar" type="text" placeholder="Id Tarifa" class="form-control input-md col-md-4" required=""> -->
+
 
                 <select id="idTar" name="idTar" class="form-control col-md-10" style="margin-top:1vw;">
-                            <?php
+                            CODESTART /*
                          $sql = "Select * FROM tarifa";
                          $tarifas = $db->runQueryPDO($sql)->fetchAll();
                          
                          for($i = 0 ; $i <count($tarifas); $i++){
                              $idTar = $tarifas[$i]["idTar"];
-                             $nomTar = $tarifas[$i]["NomTar"];
-                            ?>                                      
-                                <option value=<?= (int)$idTar ?>><?= $nomTar ?></option>                           
-                            <?php
-                             }
-                            ?>
+                             $nomTar = $tarifas[$i]["NomTar"]; */
+                            CODEEND                                     
+                                <option value= CODESTART/* (int)$idTar CODEEND>CODESTART $nomTar */ CODEEND</option>                           
+                            CODESTART
+                            /* } */
+                            CODEEND
                     </select>
                     <label class="col-md-4"></label>         
 
@@ -208,7 +211,7 @@ if (!$ses->checkActiveSession()){
             </form>
             </div>
             </div>
-
+-->
    
 
     </body>

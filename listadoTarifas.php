@@ -3,6 +3,7 @@ require_once "libs/DBConnection.php";
 require_once "libs/Sesion.php";
 require_once "ImageUpload/config.php";
 require_once "ImageUpload/imgupload.class.php";
+require_once("constants.php");
 
 $img = new ImageUpload;
 
@@ -45,7 +46,7 @@ $tarifas = $db->runQueryPDO($sql)->fetchAll();
     <div class="row">
         <div class="col col-md-3">
             <div class="card h-100">
-                <img style="width:12vw; height:12vw; margin: 0 auto" src=<?="http://localhost:8012/futurephone29nov/futurephone/ImageUpload/image.php?id=" . $idImg?>>
+                <img style="width:12vw; height:12vw; margin: 0 auto" src="<?= HOSTNAME ?>/imagenes/logo_movistar.jpg"/>
                 <p class="card-text font-weight-bold" style="text-align:center "><?=$nomTar?></p>
             </div>
         </div>

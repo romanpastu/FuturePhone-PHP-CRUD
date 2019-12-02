@@ -2,7 +2,7 @@
 require_once "config.php";
 require_once "imgupload.class.php";
 require_once("../libs/DBConnection.php");
-
+require_once("../constants.php");
 
 
 $db = new DBConnection(array(
@@ -29,7 +29,12 @@ if(!empty($result->ids)){
         $sql = "UPDATE tarifa SET idImg = ? where idTar = ?";
         $tarifas = $db->runQueryPDO($sql,$params)->fetchAll();
 
-        header("Location: http://localhost:8012/futurephone29nov/futurephone/index.php");
+        header("Location: http://localhost/proyectoDwes/FuturePhone-PHP-CRUD/index.php");
+
+        // $ref=  HOSTNAME."/index.php";
+        // echo "<script>window.location = ".$ref.";</script>";  
+        // exit;
+
         die();
     }
 
