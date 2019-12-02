@@ -12,7 +12,7 @@ function get_tarifa_by_nombre($nombre)
   $params = [$nombre];
   $sql = "Select NomTar, PrecTar, MinTar, MegTar FROM tarifa where NomTar = ?";
   
-  $info_tarifa = $db->runQueryPDO($sql,$params)->fetchAll();
+  $info_tarifa = $db->runQueryPDO($sql,$params)->fetchAll(PDO::FETCH_OBJ);
   return $info_tarifa;
 
 }
@@ -22,7 +22,7 @@ function get_tarifa_list()
 {
    $db = new DBConnection(dbConfig());
    $sql = "Select NomTar from tarifa";
-   $tarifa_list = $db->runQueryPDO($sql)->fetchAll();
+   $tarifa_list = $db->runQueryPDO($sql)->fetchAll(PDO::FETCH_OBJ);
 
   return $tarifa_list;
 }
