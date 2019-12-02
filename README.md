@@ -1,6 +1,8 @@
 # FuturePhone-PHP-CRUD
 Proyecto PHP , realizado para la asignatura Desarrollo Web en Entorno Servidor, para el curso 19/20
 
+*Nota : Para que el proyecto funcione correctamente , hay que establecer la ruta del proyecto en el fichero constants.php*
+
 La aplicación consiste en un sistema de gestión realizado para una web de telefonía, que nos permitira gestionar a los usuarios de dicha web, y a su vez las tarifas y lineas telefónicas que esten asignadas a dichos usuarios.
 
 De tal forma dispondremos de **3 tipos de usuarios**, con distintas funciones.
