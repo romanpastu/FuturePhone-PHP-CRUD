@@ -10,7 +10,7 @@ De tal forma dispondremos de **3 tipos de usuarios**, con distintas funciones.
 **Roles:**
   - **Administrador**: Este usuario podrá realizar funciones como:
     - Cambiar el Rol de otros usuarios.
-    - Gestionar las Tarifas -> Borrar tarifas, Crear Tarifas, Establecer imágenes de portada para las tarifas.
+    - Gestionar las Tarifas -> Borrar tarifas, Crear Tarifas.
     - Podrá también ver todas las lineas contratadas por los clientes.
   
   - **Usuario Común (Cliente)**: Este usuario podrá realizar funciones como:
